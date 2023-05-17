@@ -65,10 +65,9 @@
 
 // let setTimeout(() => {
 //    ageAaron
-//    else() 
-   
-// }, timeout);
+//    else()
 
+// }, timeout);
 
 // //Math operators
 // const now = 2037;
@@ -77,7 +76,7 @@
 // console.log(ageAaron, ageSarah);
 
 // console.log(ageAaron * 2, ageAaron / 10, 2 ** 3)
-// //2 ** 3 means 2 to the power of 3 = 2 * 2 * 2 
+// //2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 
 // const firstName = "Aaron";
 // const lastName = 'Murillo';
@@ -87,7 +86,7 @@
 // let x = 10 + 5; //15
 // x +=10; // x = x + 10 = 25
 // x *= 4; // x = x * 4 = 100
-// x++; // x = x + 1 
+// x++; // x = x + 1
 // x--; // x + x - 1
 // x--;
 //  console.log(x);
@@ -102,7 +101,7 @@
 
 // const now = 2037;
 // const ageAaron = now - 1991;
-// const ageSarah = now - 2018; 
+// const ageSarah = now - 2018;
 
 // console.log (now - 1991 > now - 2018);
 
@@ -135,8 +134,7 @@
 // m tall.
 // § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
 // m tall.
-// GOOD LUCK � 
-
+// GOOD LUCK �
 
 // const massMark = 78;
 // const heightMark = 1.69;
@@ -150,16 +148,15 @@
 
 // const BMIMark = massMark / heightMark ** 2;
 // const BMIJohn = massJohn / (heightJohn * heightJohn)
-// const markHigherBMI = BMIMark > BMIJohn; 
+// const markHigherBMI = BMIMark > BMIJohn;
 // console.log(BMIMark, BMIJohn, markHigherBMI);
-
 
 // const firstName = 'Aaron';
 // const job = 'teacher';
 // const birthYear = 1991;
 // const year = 2037;
 
-// const aaron = "I'm " + firstName + ', a  ' + (year - birthYear) + 'year old' + job + '!'; 
+// const aaron = "I'm " + firstName + ', a  ' + (year - birthYear) + 'year old' + job + '!';
 // console.log(aaron);
 
 // const aaronNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
@@ -180,11 +177,11 @@
 // if(age >= 18) {
 //     console.log ('Sarah can start driving license');
 // } else {
-//     const yearLeft = 18 - age; 
+//     const yearLeft = 18 - age;
 //     console.log(`Sarah is too young. Wait another ${yearLeft} years :)`);
 // }
 
-// const birthYear = 1991; 
+// const birthYear = 1991;
 
 // let century;
 // if (birthYear <= 2000) {
@@ -199,7 +196,7 @@
 // if () {
 
 // } else {
-    
+
 // }
 
 // Coding Challenge #2
@@ -215,22 +212,86 @@
 // Hint: Use an if/else statement 😉
 // GOOD LUCK 😀
 
-const massMark = 78;
-const heightMark = 1.69;
-const massJohn = 92;
-const heightJohn = 1.95;
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
 
 // const massMark = 95;
 // const heightMark = 1.88;
 // const massJohn = 85;
 // const heightJohn = 1.76;
 
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn)
-console.log(BMIMark, BMIJohn)
+// const BMIMark = massMark / heightMark ** 2;
+// const BMIJohn = massJohn / (heightJohn * heightJohn)
+// console.log(BMIMark, BMIJohn)
 
-if(BMIMark > BMIJohn) {
-    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+// if(BMIMark > BMIJohn) {
+//     console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+// } else {
+//     console.log(`John's BMI (${BMIJohn}) is higher than Mark's(${BMIMark})!`)
+// }
+
+//type conversion
+// const inputYear = '1991';
+// console.log(Number(inputYear), inputYear);
+// console.log(Number (inputYear) + 18);
+
+// console.log(Number('Aaron'))
+// console.log(typeof NaN);
+
+// console.log(String(23), 23);
+
+// //type coercion
+// console.log('I am ' + 23 + ' years old');
+// console.log('23' - '10' - 3);
+// console.log('23' * '2')
+
+// let n = '1' + 1; //'11'
+// n = n - 1;
+// console.log(n);
+
+// 5 falsy values: 0, '', undefined, null, NaN
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean("Aaron"));
+// console.log(Boolean({}));
+// console.log(Boolean(""));
+
+// const money = 0;
+// if (money) {
+//   console.log("Don't spend it all ;)");
+// } else {
+//   console.log("You should get a job!");
+// }
+
+// let height = 124;
+// if (height) {
+//   console.log("YAY! Height is defined");
+// } else {
+//   console.log("Height is UNDEFINED");
+// }
+
+
+const age = 18;
+if(age === 18) console.log('You just became an adult :D');
+
+
+if(age == 18) console.log('You just became an adult :D (loose)');
+
+const favorite = Number (prompt("What's your favorite number"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) {
+    console.log('Cool! 23 is a amazing number!')
+} else if(favorite === 7) {
+    console.log('7 is also a cool number')
+} else if (favorite === 9) {
+    console.log('9 is also a cool number')
 } else {
-    console.log(`John's BMI (${BMIJohn}) is higher than Mark's(${BMIMark})!`)
+    console.log('Number is not 23 or 7 or 9')
 }
+
+if (favorite !== 23) console.log('Why not 23?');
